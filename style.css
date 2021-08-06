@@ -1,12 +1,17 @@
 body {
   text-align: center;
+  background-color: rgb(47, 119, 61);
+  height: 800px;
+  background-image: linear-gradient(to bottom right, rgb(47, 119, 61), white);
+  background-repeat: no-repeat;
+  font-family: monospace;
 }
 
 input {
   padding: 8px;
   border-radius: 2px;
   border-radius: 14%;
-  margin:5px;
+  margin: 5px;
 }
 
 img {
@@ -15,9 +20,16 @@ img {
 button {
   text-transform: uppercase;
   border: 1px solid black;
-  background-color: #92A63E;
+  background-color: rgb(47, 119, 61);
   padding: 8px;
   border-radius: 14%;
+}
+
+h1 {
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: rgba(88, 88, 88, 0.315);
+  font-size: 70px;
+  margin: 100px 100px 30px 100px;
 }
 
 .search-section {
@@ -25,5 +37,39 @@ button {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-list > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 30px 15px 30px;
+  border: 5px solid rgba(47, 119, 61, 0.514);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.movie-list > div > li {
+  background-color: rgba(0, 0, 0, 0.199);
+  list-style: none;
+  width: 142px;
+  height: 83px;
+  text-align: center;
+  padding: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.movie-list > div > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 225px;
+  width: 150px;
 }
