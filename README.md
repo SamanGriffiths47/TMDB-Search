@@ -8,7 +8,7 @@ This is a straightforward website, where I simply fetch information from [TMDB A
 
 <div align=center>
   <a href='https://www.linkedin.com/in/saman-griffiths/' target='_blank'>LinkedIn</a> | <a href='' target='_blank'>Portfolio
-  </a> | <a href='https://resource-full.herokuapp.com'>Deployed Site</a>
+  </a> | <a href='https://tmdb-search.vercel.app/'>Deployed Site</a>
   </div>
   <br>
 </div>

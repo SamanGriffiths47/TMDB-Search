@@ -1,4 +1,4 @@
-const API_KEY = '5ccfd12e46507cfd4fb158af91d36264'
+const API_KEY = process.env.API_KEY
 const DOMAIN = 'https://api.themoviedb.org/3'
 const IMAGE_BASE_PATH = 'https://image.tmdb.org/t/p/original'
 const button = document.querySelector(`button`)
