@@ -26,28 +26,28 @@ button.addEventListener('click', async () => {
     let div = document.createElement(`div`)
     img.src = `${IMAGE_BASE_PATH + pic}`
     img.alt = `Movie Poster`
-    list.innerHTML = `<b>Title:</b> ${title}</br> <b>Date:</b> ${date}</br> <b>Original Language:</b> ${lang}`
-    section.appendChild(div).appendChild(img)
+    list.innerHTML = `<p><b>Title:</b> ${title}</br> <b>Date:</b> ${date}</br> <b>Original Language:</b> ${lang}</p>`
     section.appendChild(div).appendChild(list)
+    section.appendChild(div).appendChild(img)
   })
-  for (let i = 0; i < document.querySelectorAll(`div`).length; i++) {
-    document.querySelectorAll(`div`)[i].className = 'movie'
+  const poster = document.getElementsByTagName(`div`)
+  for (let i = 0; i < poster.length; i++) {
+    poster[i].className = 'movie'
   }
-  for (let i = 0; i < document.querySelectorAll(`li`).length; i++) {
-    document.querySelectorAll(`li`)[i].className = 'description'
-  }
-  let poster = document.getElementsByTagName(`div`)
   for (let i = 0; i < poster.length; i++) {
     poster[i].addEventListener('mouseover', function (event) {
-      event.currentTarget.childNodes[1].className = `description-posterli`
-      event.currentTarget.className = `movie-posterdiv`
+      event.currentTarget.childNodes[0].className = `posterli`
+      event.currentTarget.className = `posterdiv`
     })
   }
   for (let i = 0; i < poster.length; i++) {
     poster[i].addEventListener('mouseout', function (event) {
-      event.currentTarget.childNodes[1].className = `description`
+      event.currentTarget.childNodes[0].className = `description`
       event.currentTarget.className = `movie`
     })
+  }
+  for (let i = 0; i < document.querySelectorAll(`li`).length; i++) {
+    document.querySelectorAll(`li`)[i].className = 'description'
   }
 })
 query.addEventListener('keyup', function (event) {

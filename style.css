@@ -44,7 +44,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.movie-list > div {
+  transition: 1.5s;
+}
+.movie-list > div > li {
+  transition: 1.5s;
+}
 .movie-list > .movie {
   display: flex;
   justify-content: center;
@@ -55,7 +60,7 @@ h1 {
   border: 5px solid rgba(47, 119, 61, 0.514);
   padding: 5px;
 }
-.movie-posterdiv {
+.posterdiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,22 +78,31 @@ h1 {
   align-items: center;
   height: 245px;
   width: 190px;
+  margin-top: -118px;
 }
-.movie-list > div > .description {
-  display: none;
+.description {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.199);
   list-style: none;
   width: 182px;
   padding: 4px;
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-bottom: -127px;
+  margin-top: 127px;
 }
-.description-posterli {
+p {
+  color: rgb(0, 0, 0);
+  transition: 1.5s;
+}
+.description > p {
+  color: rgba(0, 0, 0, 0);
+}
+.posterli {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,4 +115,6 @@ h1 {
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-bottom: -245px;
+  margin-top: 127px;
 }
