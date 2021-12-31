@@ -1,5 +1,5 @@
 # TMDB Library
-### Designed By Sam'an Khaliq
+### Created By Sam'an Khaliq
 
 ![movie](./imgs/SearchScreenshot.png)
 
