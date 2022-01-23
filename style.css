@@ -1,5 +1,6 @@
 html {
-  min-height: 100v;
+  background-color: rgb(47, 119, 61);
+  margin: 0;
 }
 
 body {
@@ -58,36 +59,41 @@ h1 {
   transition: 1.5s;
 }
 .movie-list > .movie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
 
-  margin: 15px 30px 135px 30px;
+  margin: 15px 30px 134px 30px;
   border: 5px solid rgba(47, 119, 61, 0.514);
   padding: 5px;
 }
 .posterdiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
 
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   margin: 15px 30px 15px 30px;
   border: 5px solid rgba(47, 119, 61, 0.514);
   padding: 5px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .movie-list > div > img {
+  grid-area: 1/1/2/2;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 245px;
   width: 190px;
-  margin-top: -118px;
+  /* margin-top: -118px; */
 }
 .description {
+  grid-area: 1/1/2/2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,17 +105,12 @@ h1 {
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-bottom: -127px;
+  /* margin-bottom: -127px; */
+  /* margin-top: 127px; */
   margin-top: 127px;
 }
-p {
-  color: rgb(0, 0, 0);
-  transition: 1.5s;
-}
-.description > p {
-  color: rgba(0, 0, 0, 0);
-}
 .posterli {
+  grid-area: 1/1/2/2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +123,13 @@ p {
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-bottom: -245px;
-  margin-top: 127px;
+  /* margin-bottom: -245px; */
+  margin-top: 245px;
+}
+p {
+  color: rgb(0, 0, 0);
+  transition: 1.5s;
+}
+.description > p {
+  color: rgba(0, 0, 0, 0);
 }
