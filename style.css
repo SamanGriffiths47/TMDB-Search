@@ -61,9 +61,6 @@ h1 {
 .movie-list > .movie {
   display: grid;
   grid-template: 1fr / 1fr;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
 
   margin: 15px 30px 134px 30px;
   border: 5px solid rgba(47, 119, 61, 0.514);
@@ -72,9 +69,6 @@ h1 {
 .posterdiv {
   display: grid;
   grid-template: 1fr / 1fr;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
 
   margin: 15px 30px 15px 30px;
   border: 5px solid rgba(47, 119, 61, 0.514);
@@ -90,7 +84,6 @@ h1 {
   align-items: center;
   height: 245px;
   width: 190px;
-  /* margin-top: -118px; */
 }
 .description {
   grid-area: 1/1/2/2;
@@ -105,8 +98,6 @@ h1 {
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* margin-bottom: -127px; */
-  /* margin-top: 127px; */
   margin-top: 127px;
 }
 .posterli {
@@ -123,7 +114,6 @@ h1 {
   height: 110px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* margin-bottom: -245px; */
   margin-top: 245px;
 }
 p {
