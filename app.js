@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY
+const API_KEY = '5ccfd12e46507cfd4fb158af91d36264'
 const DOMAIN = 'https://api.themoviedb.org/3'
 const IMAGE_BASE_PATH = 'https://image.tmdb.org/t/p/original'
 const button = document.querySelector(`button`)
@@ -11,7 +11,6 @@ button.addEventListener('click', async () => {
   let response = await axios.get(input)
   let API_RESULTS = response.data.results
   let h2 = document.querySelector(`h2`)
-  document.body.style.height = `auto`
   h2.innerText = ``
   h2.innerText = `(Hover Over Image)`
   document.querySelector(`section`).innerHTML = ``
